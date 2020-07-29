@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="app">
     <router-view></router-view>
-    <footer-guide></footer-guide>
+    <footer-guide v-show="$route.meta.showFooter"></footer-guide>
   </div>
 </template>
 
@@ -22,6 +22,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
 }
 </style>
